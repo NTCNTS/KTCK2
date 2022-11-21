@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradi">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tencay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="Ten"
+            android:textColor="#C5C6C7"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dactinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tencay"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Dac tinh"
+            android:textColor="#C5C6C7"
+            android:textSize="20dp" />
+
+
+
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/bin" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
